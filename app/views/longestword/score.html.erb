@@ -5,6 +5,10 @@
     <div><strong>Your Score:</strong> <%= number_with_precision(@results[:score], precision: 2) %></div>
     <div><strong>Time Taken:</strong> <%= number_with_precision(@results[:time], precision: 2) %></div>
     <div><strong>Word in French:</strong> <%= @results[:translation] %></div>
+    <div><strong>Total Score:</strong> <%= number_with_precision(session[:score], precision: 2) %></div>
+  </div>
+  <div class="row">
+    <%= link_to "Play New Game", game_path %>
   </div>
 </div>
 
