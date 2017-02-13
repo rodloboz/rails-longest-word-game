@@ -12,7 +12,6 @@
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         <input type="hidden" name="grid" value="<%= @grid.join('') %>">
         <input type="hidden" name="start_time" value="<%= @start_time %>">
-        <input type="hidden" name="end_time" value="<%= Time.now %>">
         <span class="input-group-addon" id="sizing-addon1">Your guess:</span>
         <input type="text" name="attempt" class="form-control" aria-describedby="sizing-addon1">
       </div>

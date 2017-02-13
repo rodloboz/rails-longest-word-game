@@ -2,8 +2,8 @@
   <div class="row">
     <div><h2><%= @results[:message] %></h2></div>
     <hr>
-    <div><strong>Your Score:</strong> <%= @results[:score] %></div>
-    <div><strong>Time Taken:</strong> <%= @results[:time] %></div>
+    <div><strong>Your Score:</strong> <%= number_with_precision(@results[:score], precision: 2) %></div>
+    <div><strong>Time Taken:</strong> <%= number_with_precision(@results[:time], precision: 2) %></div>
     <div><strong>Word in French:</strong> <%= @results[:translation] %></div>
   </div>
 </div>

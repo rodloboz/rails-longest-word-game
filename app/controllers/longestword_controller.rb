@@ -9,6 +9,6 @@ class LongestwordController < ApplicationController
 
   def score
 
-    @results = run_game(params[:attempt], params[:grid].chars, params[:start_time].to_i, params[:end_time].to_i)
+    @results = run_game(params[:attempt], params[:grid].chars, params[:start_time].to_datetime, Time.now)
   end
 end
